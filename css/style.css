@@ -31,11 +31,7 @@ body {
     position: relative;
 }
 
-.main-nav a:hover {
-    color: #D72306;
-}
-
-.main-nav a::after {
+.main-nav a:not(.logo)::after {
     content: "";
     position: absolute;
     bottom: -0.6rem; 
@@ -43,11 +39,22 @@ body {
     width: 0; 
     height: 2.5px; 
     background-color: #D72306; 
+    transition: width 0.1s ease-in-out;
 }
 
-.main-nav a:hover::after {
+.main-nav a:not(.logo):hover::after {
     width: 100%; 
 }
+
+.main-nav a.logo img {
+    pointer-events: auto; 
+    transition: none; 
+}
+
+.main-nav a:not(.logo):hover {
+    color: #D72306;
+}
+
 
 
 .logo img {
