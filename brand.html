@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버거킹 브랜드 이야기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/brand.css">
+    <style>
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'S-CoreDream-3Light';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="menu.html">메뉴</a></li>
+                <li><a href="#">매장 찾기</a></li>
+                <li><a href="index.html" class="logo">
+                    <img src="https://www.burgerking.co.kr/dist/img/logo_header.51e1a8b7.gif" alt="버거킹 로고">
+                </a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="brand.html">브랜드 소개</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="brand-container">
+        <h1>브랜드 이야기</h1>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="new-whopper">NEW WHOPPER</button>
+            <button class="tab-btn" data-tab="fire-meat">불맛</button>
+            <button class="tab-btn" data-tab="trust">TRUST IN TASTE</button>
+        </div>
+
+        <div class="content-section active" id="new-whopper">
+            <div class="features">
+                <div class="hero-image">
+                    <img src="./assets/etc/brand-main.png" alt="New Whopper">
+                </div>
+                <div class="feature-item" id="brand1">
+                    <img src="./assets/etc/brand1.png" alt="Glazed Bun">
+                    <div class="feature-text">
+                        <h3>Glazed Bun</h3>
+                        <p>촉촉하고 풍부하게 구워낸 글레이즈드 번</p>
+                    </div>
+                </div>
+                <div class="feature-item" id="brand2">
+                    <div class="feature-text">
+                        <h3>Salt & Pepper Seasoning</h3>
+                        <p>불맛의 풍미를 높이는 솔트 & 페퍼 시즈닝</p>
+                    </div>
+                    <img src="./assets/etc/brand2.png" alt="Salt & Pepper">
+                </div>
+                <div class="feature-item" id="brand3">
+                    <img src="./assets/etc/brand3.png" alt="Tender-formed Patty">
+                    <div class="feature-text">
+                        <h3>Tender-formed Patty</h3>
+                        <p>소고기 육즙을 가득 품은 텐더폼 패티</p>
+                    </div>
+                </div>
+            </div>
+            <div class="NewWopper-text">
+                <h3>40년만에 더 맛있고 더 새로워진, 불맛 뉴 와퍼!</h3>
+                <p>촉촉하고 쫄깃하게 구워낸 글레이즈드 번,<br>불맛의 풍미를 높이는 솔트&페퍼 시즈닝<br>소고기 육즙을 가득 품은 텐더폼 패티까지~<br>
+                    신선한 재료는 물론, 엄격한 품질 기준과 함께 버거킹의<br>모든 노하우를 집약하여 완성한 뉴 와퍼를 만나보세요.</p>
+            </div>
+        </div>
+
+        <div class="content-section" id="fire-meat">
+        </div>
+
+        <div class="content-section" id="trust">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>BURGER KING</h1>
+            </div>
+            <div class="footer-info">
+                <p>서울 종로구 삼봉로 71 G 타워 4F,5F 주식회사 비케이알 | 전화주문 1599-0505</p>
+                <p>사업자 등록번호 101-86-76277 | (주)BKR 대표이사 이동형</p>
+                <p>Copyright 2019 BKR Co., Ltd. All right Reserved</p>
+            </div>
+            <div class="social-links">
+                <img src="./assets/etc/페이스북.png" alt="facebook" class="facebook" data-link="https://www.facebook.com">
+                <img src="./assets/etc/인스타그램.png" alt="instagram" class="instagram" data-link="https://www.instagram.com">
+                <img src="./assets/etc/유튜브.png" alt="youtube" class="youtube" data-link="https://www.youtube.com">
+            </div>
+            
+            <script>
+                document.querySelectorAll('.social-links img').forEach(img => {
+                    img.addEventListener('click', function() {
+                        window.open(img.getAttribute('data-link'), '_blank');
+                    });
+                });
+            </script>
+            
+            <div class="footer-menu">
+                <p>이용약관 | 개인정보처리방침 | 법적고지</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/brand.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버거킹</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/shortcuts.css">
+    <style>
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'S-CoreDream-3Light';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="menu.html">메뉴</a></li>
+                <li><a href="#">매장 찾기</a></li>
+                <li><a href="index.html" class="logo">
+                    <img src="https://www.burgerking.co.kr/dist/img/logo_header.51e1a8b7.gif" alt="버거킹 로고">
+                </a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="brand.html">브랜드 소개</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-section">
+            <div class="banner-container">
+                <button class="banner-btn prev">
+                    <img src="./assets/etc/pre.png" alt="prev-btn">
+                </button>
+                <div class="banner-wrapper">
+                    <div class="banner active">
+                        <img src="./assets/banner&event/배너1.png" alt="두툼버거">
+                    </div>
+                    <div class="banner">
+                        <img src="./assets/banner&event/배너2.png" alt="프로모션">
+                    </div>
+                    <div class="banner">
+                        <img src="./assets/banner&event/배너3.png" alt="신메뉴">
+                    </div>
+                    <div class="banner">
+                        <img src="./assets/banner&event/배너4.png" alt="이벤트">
+                    </div>
+                </div>
+                <button class="banner-btn next">
+                    <img src="./assets/etc/next.png" alt="next-btn">
+                </button>
+                <div class="banner-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="category-tabs">
+                <button class="category-btn active" data-category="drinks">음료</button>
+                <button class="category-btn" data-category="burgers">햄버거</button>
+                <button class="category-btn" data-category="sides">사이드</button>
+            </div>
+            <div class="products-container">
+                <div class="products-wrapper" id="productsWrapper"></div>
+            </div>
+        </section>
+
+        <section class="shortcuts-section">
+            <div class="shortcut-item">
+                <div class="shortcut-image">
+                    <img src="./assets/etc/브랜드숏컷.png" alt="브랜드 스토리">
+                </div>
+                <div class="shortcut-content">
+                    <h2>브랜드소개<br>바로가기</h2>
+                    <a href="brand.html" class="shortcut-link">
+                        <img src="./assets/etc/move.png" alt="자세히 보기" class="arrow-icon">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="shortcut-item">
+                <div class="shortcut-image">
+                    <img src="./assets/etc/이벤트숏컷.png" alt="이벤트">
+                </div>
+                <div class="shortcut-content">
+                    <h2>이벤트목록<br>바로가기</h2>
+                    <a href="events.html" class="shortcut-link">
+                        <img src="./assets/etc/move.png" alt="" class="arrow-icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>BURGER KING</h1>
+            </div>
+            <div class="footer-info">
+                <p>서울 종로구 삼봉로 71 G 타워 4F,5F 주식회사 비케이알 | 전화주문 1599-0505</p>
+                <p>사업자 등록번호 101-86-76277 | (주)BKR 대표이사 이동형</p>
+                <p>Copyright 2019 BKR Co., Ltd. All right Reserved</p>
+            </div>
+            <div class="social-links">
+                <img src="./assets/etc/페이스북.png" alt="facebook" class="facebook" data-link="https://www.facebook.com">
+                <img src="./assets/etc/인스타그램.png" alt="instagram" class="instagram" data-link="https://www.instagram.com">
+                <img src="./assets/etc/유튜브.png" alt="youtube" class="youtube" data-link="https://www.youtube.com">
+            </div>
+            
+            <script>
+                document.querySelectorAll('.social-links img').forEach(img => {
+                    img.addEventListener('click', function() {
+                        window.open(img.getAttribute('data-link'), '_blank');
+                    });
+                });
+            </script>
+            
+            <div class="footer-menu">
+                <p>이용약관 | 개인정보처리방침 | 법적고지</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/banner.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/shortcuts.js"></script>
+</body>
+</html>

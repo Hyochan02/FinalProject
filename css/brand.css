@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.brand-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand-container h1 {
+    padding: 5rem 0 5rem 0;
+    color: rgba(81, 35, 20, 0.8);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    border-bottom: 2.5px solid rgba(81, 35, 20, 0.8);
+}
+
+.tab-btn {
+    width: 400px;
+    height: 6rem;
+    font-family: 'yg-jalnan', sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: rgba(81, 35, 20, 0.8);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: #F4EBDC;
+    background-color: #D72306;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.hero-image {
+    max-height: 500px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.feature-item {
+    display: flex;
+}
+
+.feature-item img {
+    min-width: 600px;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4EBDC;
+    flex: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, visibility 0s 0.6s;
+}
+
+.feature-text.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease-in, visibility 0s 0s;
+}
+
+.feature-text h3 {
+    font-size: 2.3rem;
+}
+
+.feature-text p {
+    font-size: 1.6rem;
+}
+
+#brand1 h3, #brand1 p {
+    color: #D72306;
+}
+
+#brand2 h3,#brand2 p {
+    color: #FF8631;
+}
+
+#brand3 h3,#brand3 p {
+    color: #512314;
+}
+
+
+.NewWopper-text {
+    padding: 3rem 0 3rem 0;
+    color: #512314;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, visibility 0s 0.6s;
+}
+
+.NewWopper-text h3 {
+    font-size: 1.8rem;
+}
+
+.NewWopper-text p {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+
+.NewWopper-text.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease-in, visibility 0s 0s;
+}

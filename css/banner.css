@@ -1,0 +1,77 @@
+.banner-section {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.banner-container {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.banner-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.banner {
+    min-width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: relative;
+}
+
+.banner.active {
+    opacity: 1;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;   
+}
+
+.banner-btn img {
+    width: 3rem;
+}
+
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+
+.banner-dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: #fff solid 2px;
+    background: rgba(244, 235, 220, 1);
+    cursor: pointer;
+}
+
+.dot.active {
+    background: rgba(255, 130, 51, 1);
+}

@@ -1,0 +1,170 @@
+.menu-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.menu-detail-wrap {
+    display: flex;
+}
+
+.menu-detail {
+    max-width: 1200px;
+    padding: 3rem 0 4rem 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu-detail.hidden {
+    display: none;
+}
+
+.menu-image-container {
+    flex: 1;
+    cursor: pointer;
+}
+
+.menu-image-container img {
+    width: 100%;
+}
+
+.menu-info {
+    flex: 1;
+    padding: 1rem;
+}
+
+.menu-title h1 {
+    font-size: 2.1rem;
+    margin: 0;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.set-button {
+    font-family: 'yg-jalnan', sans-serif;
+    background-color: #FF8631;
+    color: #F4EBDC;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+.divider {
+    height: 1px;
+    background-color: #000;
+}
+
+.menu-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.ingredients-container {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.ingredients-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingredients-wrap p {
+    font-size: 1rem;
+}
+
+.ingredients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #F4EBDC;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.price {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0.8rem 0 0.8rem 0;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 7rem;
+    background-color: #FF8631;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+}
+
+.back-button a {
+    text-decoration-line: none;
+    color: #F4EBDC;
+}
+
+.back-button img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.image-popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.popup-content img {
+    max-width: 100%;
+    max-height: 90vh;
+}
+
+.close-popup {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
